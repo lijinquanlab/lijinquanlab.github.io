@@ -46,7 +46,7 @@
                 <ul class="nav navbar-nav pull-right mainNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Research.html">Research and publication</a></li>
-                    <li class="active"><a href="Colabrate.html">Colabrate</a></li>
+                    <li class="active"><a href="Colabrate.html">Collaborate</a></li>
                     <li><a href="People.html">People</a></li>
                     <li><a href="Photo.html">Memories</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
@@ -154,7 +154,16 @@
 		
 		if(Params == 'China'){
 			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.JPG" alt="">';
-            var word_1 = '<p>文字部分</p>'
+            		var word_1 = '<p>文字部分</p>'
+			
+			$("#nation").html(Params);
+			$("#photo_1").html(line_1);
+			$("#word_1").html(word_1);
+			$("#d2").remove();
+		};
+		if(Params == 'UK'){
+			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.JPG" alt="">';
+            		var word_1 = '<p>文字部分</p>'
 			
 			$("#nation").html(Params);
 			$("#photo_1").html(line_1);
@@ -175,7 +184,7 @@
                             <p class="simplenav">
                                 <a href="index.html">Home</a> | 
 								<a href="Research.html">Research and publication</a> |
-								<a href="Colabrate.html">Colabrate</a> |
+								<a href="Collaborate.html">Colabrate</a> |
 								<a href="People.html">People</a> |
 								<a href="Photo.html">Memories</a> | 
 								<a href="Contact.html">Contact Us</a></p>
