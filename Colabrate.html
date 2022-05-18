@@ -164,7 +164,7 @@
   },
   {
     name: 'United Kingdom',
-    value: 0000
+    value: 1
   },
   {
     name: 'Venezuela',
@@ -1154,11 +1154,16 @@ Highcharts.getJSON(
 				 if(e.point.name == 'Australia'){
 				    var nations = 'Australia' 
 					window.location.href = "./Colab.html" + "?nation=" + nations;
-				 }
+				 };
 				 if(e.point.name == 'Egypt'){
 				    var nations = 'Egypt' 
 					window.location.href = "./Colab.html" + "?nation=" + nations;
-				 }
+				 };
+				 if(e.point.name == 'United Kingdom'){
+				    var nations = 'UK' 
+					window.location.href = "./Colab.html" + "?nation=" + nations;
+				 };
+				 
             } 
         },
           clip: false,
