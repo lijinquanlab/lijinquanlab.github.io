@@ -24,8 +24,7 @@
     <!-- Custom styles for our template -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="assets/css/style.css">
-	
-	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -46,7 +45,7 @@
                 <ul class="nav navbar-nav pull-right mainNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Research.html">Research and publication</a></li>
-                    <li class="active"><a href="Colabrate.html">Collaborate</a></li>
+                    <li class="active"><a href="Collaboration.html">Collaboration</a></li>
                     <li><a href="People.html">People</a></li>
                     <li><a href="Photo.html">Memories</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
@@ -79,100 +78,132 @@
                 <h3>Cooperation projects in <a id="nation">USA</a></h3>
                 <Br>
             </div>
-			<style>
-			.exp{ float:right; width:500px;}
-			</style>
-		<div id='d1' class="container">
-				<div class="col-sm-6 col-xs-6">
+            <style>
+                .exp{ float:right; width:500px;}
+            </style>
+            <div id='d1' class="container">
+                <div class="col-sm-6 col-xs-6">
                     <!-- Team Member -->
                     <div id='photo_1' class="team-member pDark">
-                        
-                    </div>
-				</div>
-				<div id='word_1' class="exp">
-				   
-				</div>
-                
-		</div>
-		<br>
-		<br>
-		<br>
-		<div id='d2' class="container">
-				<div class="col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div id='photo_2' class="team-member pDark">
-                        
                     </div>
                 </div>
-				<div id='word_2' class="exp">
-				   
-				</div>
-		</div>
-	
+                <div id='word_1' class="exp">
+                </div>
+            </div>
+            <br>
+            <div id='d2' class="container">
+                <div class="col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div id='photo_2' class="team-member pDark">
+                    </div>
+                </div>
+                <div id='word_2' class="exp">
+                </div>
+            </div>
+            <br>
+            <div id='d3' class="container">
+                <div class="col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div id='photo_3' class="team-member pDark">
+                    </div>
+                </div>
+                <div id='word_3' class="exp">
+                </div>
+            </div>
         </aside>
     </section>
-	<script>
-	  function get(){
-	    var url = window.location.href;
-		let urlParams = url.split('?')[1]
-		let Params = url.split('=')[1]
-		console.log(Params);
-		
-		if(Params == 'USA'){
-			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.jpg" alt="">';
-			var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_2.jpg" alt="">';
+    <script>
+    function get() {
+        var url = window.location.href;
+        let urlParams = url.split('?')[1]
+        let Params = url.split('=')[1]
+        console.log(Params);
+
+        if (Params == 'USA') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
+            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
+            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">';
 
             var word_1 = '<p>文字部分</p>'
-			var word_2 = '<p>文字部分</p>'
-			
-			$("#nation").html(Params);
-			$("#photo_1").html(line_1);
-			$("#photo_2").append(line_2);
-			$("#word_1").html(word_1);
-			$("#word_2").append(word_2);
-		};
-		
-		if(Params == 'Australia'){
-			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.jpg" alt="">';
+            var word_2 = '<p>文字部分</p>'
+            var word_3 = '<h4>2019：Haoyue Xu at Rockefeller University, USA</h4>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#photo_2").append(line_2);
+            $("#photo_3").append(line_3);
+            $("#word_1").html(word_1);
+            $("#word_2").append(word_2);
+            $("#word_3").append(word_3);
+
+        };
+
+        if (Params == 'Australia') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
+            var word_1 = '<h4>Jun 5, 2017， Jinquan Li with Robin and Prof. Hu at University of Melbourne, Australia</h4>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
+            $("#d2").remove();
+        };
+
+        if (Params == 'Egypt') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
+            var word_1 = '<h4>2017，Jinquan Li at Benha University，Egypt</h4>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
+            $("#d2").remove();
+        };
+
+        if (Params == 'China') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
+            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.JPG" alt="">';
+            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.JPG" alt="">';
+
             var word_1 = '<p>文字部分</p>'
-			
-			$("#nation").html(Params);
-			$("#photo_1").html(line_1);
-			$("#word_1").html(word_1);
-			$("#d2").remove();
-		};
-		
-		if(Params == 'Egypt'){
-			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.JPG" alt="">';
-            var word_1 = '<p>文字部分</p>'
-			
-			$("#nation").html(Params);
-			$("#photo_1").html(line_1);
-			$("#word_1").html(word_1);
-			$("#d2").remove();
-		};
-		
-		if(Params == 'China'){
-			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.JPG" alt="">';
-            		var word_1 = '<p>文字部分</p>'
-			
-			$("#nation").html(Params);
-			$("#photo_1").html(line_1);
-			$("#word_1").html(word_1);
-			$("#d2").remove();
-		};
-		if(Params == 'UK'){
-			var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params +'_1.JPG" alt="">';
-            		var word_1 = '<p>文字部分</p>'
-			
-			$("#nation").html(Params);
-			$("#photo_1").html(line_1);
-			$("#word_1").html(word_1);
-			$("#d2").remove();
-		};
-	   };
-	   get()
-	</script>
+            var word_2 = '<h4>June 10，2018，Geng Zou at the International Society of Swine Diseases，Chongqing</h4>'
+            var word_3 = '<h4>May 13，2017，Geng Zou at Asian Swine Disease Society, Wuhan, </h4>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#photo_2").append(line_2);
+            $("#photo_3").append(line_3);
+            $("#word_1").html(word_1);
+            $("#word_2").append(word_2);
+            $("#word_3").append(word_3);
+        };
+        if (Params == 'UK') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
+            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.JPG" alt="">';
+            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.JPG" alt="">';
+
+            var word_1 = '<h4>2015， Jinquan Li with Dongsheng Chen at the University of Cambridge, UK</h4>'
+            var word_2 = '<h4>Sep 29,  2017，Geng Zou at Cambridge University，UK</h4>'
+            var word_3 = '<h4>March 8，2015，Geng Zou at The Eagle Pub，Cambridge University，UK</h4><br><p>This is where Watson and Crick announced the great discovery of the DNA model.</p>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#photo_2").append(line_2);
+            $("#photo_3").append(line_3);
+            $("#word_1").html(word_1);
+            $("#word_2").append(word_2);
+            $("#word_3").append(word_3);
+        };
+                if (Params == 'Fiji') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
+            var word_1 = '<h4>19 October 2017,  Geng Zou at International Streptococcus and Streptococcus Conference,  Fiji</h4>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
+            $("#d2").remove();
+        };
+    };
+    get()
+    </script>
     <!-- /container -->
     <h5>&nbsp;</h5>
     <footer id="footer">
@@ -182,18 +213,22 @@
                     <div class="col-md-6 panel">
                         <div class="panel-body">
                             <p class="simplenav">
-                                <a href="index.html">Home</a> | 
-								<a href="Research.html">Research and publication</a> |
-								<a href="Collaborate.html">Colabrate</a> |
-								<a href="People.html">People</a> |
-								<a href="Photo.html">Memories</a> | 
-								<a href="Contact.html">Contact Us</a></p>
+                                <a href="index.html">Home</a> |
+                                <a href="Research.html">Research and publication</a> |
+                                <a href="Collaboration.html">Collaboration</a> |
+                                <a href="People.html">People</a> |
+                                <a href="Photo.html">Memories</a> |
+                                <a href="Contact.html">Contact Us</a></p>
                         </div>
                     </div>
                     <div class="col-md-6 panel">
                         <div class="panel-body">
                             <p class="text-right">
                                 Copyright &copy; 2018 <a href="http://www.hzau.edu.cn/" target="_blank">华中农业大学</a> | <a href="http://biomed.hzau.edu.cn/" target="_blank">华中农业大学生物医学与健康学院</a> | 李锦铨课题组 版权所有<br>
+                                Powered by <a href="mailto:small.runze@gmail.com">李润泽</a>
+                                <a href="mailto:daleexj@163.com">李雪建</a>
+                                <a href="mailto:2519394974@qq.com">兰翔宇</a>
+                                <br>
                                 <a href="http://www.beian.miit.gov.cn" target="_blank"><img width="15" style="margin-top: -3px;" src="assets/images/ga.png"> 鄂ICP备12006874号</a><br>
                             </p>
                         </div>
