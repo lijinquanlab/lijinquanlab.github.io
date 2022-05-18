@@ -74,7 +74,7 @@
    <br>
    <br>
    <figure class="highcharts-figure">
-		<div id="container"></div>
+		<div id="container"></div><br><br>
 		<p class="highcharts-description">
 			Multi-dimensional cooperation on a global scale.
 		</p>
@@ -352,7 +352,7 @@
   },
   {
     name: 'Egypt',
-    value: 00
+    value: 1
   },
   {
     name: 'Madagascar',
@@ -1157,6 +1157,10 @@ Highcharts.getJSON(
 				 };
 				 if(e.point.name == 'Australia'){
 				    var nations = 'Australia' 
+					window.location.href = "./Colab.html" + "?nation=" + nations;
+				 }
+				 if(e.point.name == 'Egypt'){
+				    var nations = 'Egypt' 
 					window.location.href = "./Colab.html" + "?nation=" + nations;
 				 }
             } 
