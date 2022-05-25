@@ -121,15 +121,14 @@
 
         if (Params == 'USA') {
             var line_1 = '<img style="height:100px;weight:50px" src="assets/images/' + Params + '_1.jpg" alt="">';
-            // var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
-            var line_3 = '<img style="height:100px;weight:50px" src="assets/images/' + Params + '_3.JPG" alt="">';
+            var line_2 = '<img style="height:100px;weight:50px" src="assets/images/' + Params + '_3.JPG" alt="">';
 
             
             var word_1 = '<ol><h2>USA, The Rockefeller University, Vincent A. Fischetti & Jinquan Li, 2020</h2><p>&nbsp;</p><p> Among bacteria, viruses called phages are public enemy number one.' + 
                 'These pathogens propagate by injecting their genome into unsuspecting microbes, eventually causing their host cell to rupture, at which point progeny phage are released to infect' + 
                 'other members of a bacterial colony.'+'To mitigate these attacks, bacteria have evolved immune mechanisms known as CRISPRs, or clustered regularly interspaced short palindromic repeats, which, with the help of associated Cas enzymes, detect and destroy foreign genetic material.</p></ol>'
-            // var word_2 = '<p>文字部分</p>'
-            var word_3 = '<ol><h2>USA, The Rockefeller University, Siyue Xu, 2019, Visit The Rockefeller University</h2><p>&nbsp;</p>' + 
+       
+            var word_2 = '<ol><h2>USA, The Rockefeller University, Siyue Xu, 2019, Visit The Rockefeller University</h2><p>&nbsp;</p>' + 
                 '<p>Students in this research group have the opportunity to visit Rockefeller University,' +
                 'conduct academic exchanges with Rockefeller University professors, and explore the mysterious world of phages together.</p></ol>'
             
@@ -137,9 +136,9 @@
 
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
-            $("#photo_3").append(line_3);
+            $("#photo_2").append(line_2);
             $("#word_1").html(word_1);
-            $("#word_3").append(word_3);
+            $("#word_2").append(word_2);
 
         };
 
