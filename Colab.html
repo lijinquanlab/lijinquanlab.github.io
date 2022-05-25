@@ -154,8 +154,14 @@
 
         if (Params == 'Egypt') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
-            var word_1 = '<h4>Egypt, Benha University, Jinquan li, 2017</h4>'
-
+            var word_1 = '<ol><h2>Egypt, Benha University, Jinquan li, 2017</h2><p>&nbsp;</p>' + 
+                         '<p>Benha University is the 13th largest university in the 17 universities.' +
+                         'he university has 16 faculties, including medicine, nursing, science,' +
+                         'education, physical education, commerce, literature, law, quality education,' + 
+                         'computers and artificial intelligence, and engineering(formerly the higher technology institute).' + 
+                         'Our group holds academic exchanges with Benha University from time to time.</p></ol>'
+            
+            
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
             $("#word_1").html(word_1);
