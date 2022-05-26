@@ -88,7 +88,10 @@
 	    </style>
         <div>
 		 <ul class='ul_class' id = 'img'>
-		</ul> 
+           <li class='li_class'><img style='height: 200px;weight:200px' src="assets/images/2013heying21.jpg" alt=""><a onclick='photo(this)' id='id_1'>2013 memories</a></li>
+           <li class='li_class'><img style='height: 200px;weight:200px' src="assets/images/lif_1.jpg" alt=""><a onclick='photo(this)' id='id_2'>2014-2018 memories</a></li>
+           <li class='li_class'><img style='height: 200px;weight:200px' src="assets/images/lif-4.JPG" alt=""><a onclick='photo(this)' id='id_3'>2019-Present</a></li>
+         </ul> 
         </div>
 		<script>
 		    function get() {
@@ -97,7 +100,7 @@
 				let Params = url.split('=')[1]
 				console.log(Params);
 				
-				if(Params == 'id_1'){
+				if(Params == '2013'){
 					var line_1 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">2013 memories</a></li>';
 					var line_2 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">2013 memories</a></li>';
 					var line_3 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">2013 memories</a></li>';
@@ -109,7 +112,7 @@
 					$("#img").append(line_3);
 				};
 				
-				if(Params == 'id_2'){
+				if(Params == '2014'){
 					var line_1 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">2014-2018 memories</a></li>';
 					var line_2 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">2014-2018 memories</a></li>';
 					var line_3 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">2014-2018 memories</a></li>';
@@ -121,7 +124,7 @@
 					$("#img").append(line_3);
 				};
 				
-				if(Params == 'id_3'){
+				if(Params == '2019'){
 					var line_1 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">2019-Present memories</a></li>';
 					var line_2 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">2019-Present memories</a></li>';
 					var line_3 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">2019-Present memories</a></li>';
@@ -133,8 +136,7 @@
 					$("#img").append(line_3);
 				};
 				
-			};
-			get();
+			}
 		
 		</script>
     </div>
