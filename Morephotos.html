@@ -87,25 +87,51 @@
             .li_class{width:250px;height:150px;margin:60px; float:left;list-style-type:none}			
 	    </style>
         <div>
-		 <ul class='ul_class'>
+		 <ul class='ul_class' id = 'img'>
            <li class='li_class'><img style='height: 200px;weight:200px' src="assets/images/2013heying21.jpg" alt=""><a onclick='photo(this)' id='id_1'>2013 memories</a></li>
            <li class='li_class'><img style='height: 200px;weight:200px' src="assets/images/lif_1.jpg" alt=""><a onclick='photo(this)' id='id_2'>2014-2018 memories</a></li>
            <li class='li_class'><img style='height: 200px;weight:200px' src="assets/images/lif-4.JPG" alt=""><a onclick='photo(this)' id='id_3'>2019-Present</a></li>
          </ul> 
         </div>
 		<script>
-		     function photo(obj) {
-			    var param = $(obj).attr('id');
-				if(param == 'id_1'){
-				  window.location.href = "./Morephotos.html" + "?period=2013";
+		    function get() {
+				var url = window.location.href;
+				let urlParams = url.split('?')[1]
+				let Params = url.split('=')[1]
+				console.log(Params);
+				
+				if(Params == 'id_1'){
+					var line_1 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">2013 memories</a></li>';
+					var line_2 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">2013 memories</a></li>';
+					var line_3 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">2013 memories</a></li>';
+					
+					$("#img").html(line_1);
+					$("#img").append(line_2);
+					$("#img").append(line_3);
 				};
-				if(param == 'id_2'){
-				  window.location.href = "./Morephotos.html" + "?period=2014";
+				
+				if(Params == 'id_2'){
+					var line_1 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">2014-2018 memories</a></li>';
+					var line_2 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">2014-2018 memories</a></li>';
+					var line_3 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">2014-2018 memories</a></li>';
+					
+					$("#img").html(line_1);
+					$("#img").append(line_2);
+					$("#img").append(line_3);
 				};
-				if(param == 'id_3'){
-				  window.location.href = "./Morephotos.html" + "?period=2019";
+				
+				if(Params == 'id_3'){
+					var line_1 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">2019-Present memories</a></li>';
+					var line_2 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">2019-Present memories</a></li>';
+					var line_3 = '<li class="li_class"><img style="height: 200px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">2019-Present memories</a></li>';
+					
+					$("#img").html(line_1);
+					$("#img").append(line_2);
+					$("#img").append(line_3);
 				};
-			 }
+				
+			}
+		
 		</script>
     </div>
     <hr>
