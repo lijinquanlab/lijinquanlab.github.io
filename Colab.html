@@ -110,8 +110,37 @@
                 <div id='word_3' class="exp">
                 </div>
             </div>
+            <br>
+            <div id='d4' class="container">
+                <div class="col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div id='photo_4' class="team-member pDark">
+                    </div>
+                </div>
+                <div id='word_4' class="exp">
+                </div>
+            </div>
         </aside>
     </section>
+    <style>
+        h2{
+            margin-left: -14px;
+        }
+        .firstlist{
+            font-size:16px;
+            margin-bottom: 5px;
+            margin-top: 2px;
+
+        }
+        ul{
+            list-style-type:none;
+        }
+        .secondlist{
+            font-size: 14px;
+            margin-left: -40px;
+        }
+
+    </style>
     <script>
     function get() {
         var url = window.location.href;
@@ -124,9 +153,19 @@
             var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.JPG" alt="">';
 
 
-            var word_1 = '<ol><h2>USA, The Rockefeller University, Vincent A. Fischetti & Jinquan Li, 2020</h2><p>&nbsp;</p><p> Among bacteria, viruses called phages are public enemy number one.' +
-                'These pathogens propagate by injecting their genome into unsuspecting microbes, eventually causing their host cell to rupture, at which point progeny phage are released to infect' +
-                'other members of a bacterial colony.' + 'To mitigate these attacks, bacteria have evolved immune mechanisms known as CRISPRs, or clustered regularly interspaced short palindromic repeats, which, with the help of associated Cas enzymes, detect and destroy foreign genetic material.</p></ol>'
+            var word_1 = '<ol><h2>USA, The Rockefeller University, Vincent A. Fischetti & Jinquan Li, 2020-present </h2>' +
+
+                '<li class="firstlist">Vincent A. Fischetti,Ph.D. studies bacterial infectious diseases and the use of phage enzymes and derivatives to treat and prevent infection. <a href="https://www.rockefeller.edu/our-scientists/heads-of-laboratories/1160-vincent-a-fischetti/">Related Link</a></li>' +
+                '<li class="firstlist">Laboratory of Bacterial Pathogenesis and Immunology link: <a href="https://www2.rockefeller.edu/vaf/">www2.rockefeller.edu/vaf</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/33498009/">Decontamination of Escherichia coli O157:H7 on fresh Romaine lettuce using a novel bacteriophage lysin.</a> ' +
+                'Xu S, Campisi E, Li J, Fischetti VA. Int J Food Microbiol. 2021 Mar 2;341:109068. </br>doi: 10.1016/j.ijfoodmicro.2021.109068.</li>' +
+                '<li class="secondlist">3.2 <a href="https://pubmed.ncbi.nlm.nih.gov/32069865/">Application of a Broad Range Lytic Phage LPST94 for Biological Control of Salmonella in Foods.</a>' +
+                'Islam MS, Zhou Y, Liang L, Nime I, Yan T, Willias SP, Mia MZ, Bei W, Connerton IF, Fischetti VA, Li J. Microorganisms. 2020 Feb 13;8(2):247. doi: 10.3390/microorganisms8020247.</li>' +
+                '<li class="secondlist">3.3 <a href="https://pubmed.ncbi.nlm.nih.gov/34137500/">The global emergence of a novel Streptococcus suis clade associated with human infections. </a>' +
+                'Dong X, Chao Y, Zhou Y, Zhou R, Zhang W, Fischetti VA, Wang X, Feng Y, Li J. EMBO Mol Med. 2021 Jul 7;13(7):e13810. doi: 10.15252/emmm.202013810. </li>' +
+                
+                '</ul></ol>'
 
             var word_2 = '<ol><h2>USA, The Rockefeller University, Siyue Xu, 2019, Visit The Rockefeller University</h2><p>&nbsp;</p>' +
                 '<p>Students in our group have the opportunity to visit Rockefeller University,' +
@@ -144,14 +183,15 @@
 
         if (Params == 'Australia') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
-            var word_1 = '<ol><h2>Australia, The University of Melbourne, Jun 5,2017, Jinquan Li with Robin and Prof. Hu</h2><p>&nbsp;</p>' +
-                '<p>1. Congratulations to Prof. Robin for being recognised as Fellows of the Australian Academy of Science in 2021. <a href="https://www.science.org.au/profile/robin-gasser">Related Link</a>' +
-                '</br>2. Gasser Lab link: <a href="http://gasserlab.org/index.html"> gasserlab.org</a>' +
-                '</br>3. Cooperation results:' +
-                '</br>&nbsp;&nbsp;3.1 Predominance of Streptococcus suis ST1 and ST7 in human cases in China, and detection of a novel sequence type, ST658. ' +
-                'Zhou Y, Dong X, Li Z, Zou G, Lin L, Wang X, Chen H, Gasser RB, Li J.Virulence. 2017 Aug 18;8(6):1031-1035. ' +
-                '</br>doi: 10.1080/21505594.2016.1243193. '
-                '</br>3. Cooperation results:</p></ol>'
+            var word_1 = '<ol><h2>Australia, The University of Melbourne, Jun 5,2017, Jinquan Li with Prof. Robin Gasser ' +
+                'and <a href="https://faculty.hzau.edu.cn/humin/en/index.htm">Prof. Min Hu</a></h2><p>&nbsp;</p>' +
+
+                '<li class="firstlist">Congratulations to Prof. Robin for being recognised as one of 2021 Australian Academy of Science Fellows. <a href="https://www.science.org.au/profile/robin-gasser">Related Link</a></li>' +
+                '<li class="firstlist">Gasser Lab link: <a href="http://gasserlab.org/index.html"> gasserlab.org</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/27689249/">Predominance of Streptococcus suis ST1 and ST7 in human cases in China, and detection of a novel sequence type, ST658.</a> ' +
+                'Zhou Y, Dong X, Li Z, Zou G, Lin L, Wang X, Chen H, Gasser RB, Li J. Virulence.2017 Aug 18;8(6):1031-1035. doi: 10.1080/21505594.2016.1243193.</li>' +
+                '</ul></ol>'
 
 
             $("#nation").html(Params);
@@ -207,30 +247,47 @@
             $("#word_3").append(word_3);
         };
         if (Params == 'UK') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
-            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
-            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">';
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_4.jpg" alt="">';
+            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
+            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
+            var line_4 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">';
 
-            var word_1 = '<ol><h2>UK, The University of Cambridge, Jinquan Li & Dongsheng Chen, 2015</h2><p>&nbsp;</p>' +
+            var word_1 = '<ol><h2>UK, University of Nottingham, Jinquan Li & Ian F Connerton, 2020-present</h2>' +
+
+                '<li class="firstlist">Ian F Connerton is the Chair of Food Safety at the University of Nottingham where he leads the Division of Microbiology, Brewing and Biotechnology.  <a href="https://www.nottingham.ac.uk/Biosciences/People/Ian.Connerton#:~:text=Ian%20Connerton%20is%20the%20Chair%20of%20Food%20Safety,been%20involved%20in%20molecular%20biology%20research%E2%80%A6%20read%20more">Related Link</a></li>' +
+                '<li class="firstlist">Ian F. Connerton<a href="https://scholar.google.com/citations?user=qryG824AAAAJ&hl=en"> Google Scholar</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/34399488/">Application of a novel phage vB_SalS-LPSTLL for the biological control of Salmonella in foods.</a> ' +
+                'Guo Y, Li J, Islam MS, Yan T, Zhou Y, Liang L, Connerton IF, Deng K, Li J. Food Res Int. 2021 Sep;147:110492.</br>doi: 10.1016/j.foodres.2021.110492.</li>' +
+                '<li class="secondlist">3.2 <a href="https://pubmed.ncbi.nlm.nih.gov/32069865/">Application of a Broad Range Lytic Phage LPST94 for Biological Control of Salmonella in Foods.</a>' +
+                'Islam MS, Zhou Y, Liang L, Nime I, Yan T, Willias SP, Mia MZ, Bei W, Connerton IF, Fischetti VA, Li J. Microorganisms. 2020 Feb 13;8(2):247. doi: 10.3390/microorganisms8020247.</li>' +
+                '<li class="secondlist">3.3 <a href="https://pubmed.ncbi.nlm.nih.gov/32178465/">Application of a Novel Phage LPSEYT for Biological Control of Salmonella in Foods.</a>' +
+                'Yan T, Liang L, Yin P, Zhou Y, Sharoba AM, Lu Q, Dong X, Liu K, Connerton IF, Li J. Microorganisms. 2020 Mar 12;8(3):400.</br>doi: 10.3390/microorganisms8030400.</li>' +
+                '</ul></ol>'
+
+            var word_2 = '<ol><h2>UK, The University of Cambridge, Jinquan Li & Dongsheng Chen, 2015</h2><p>&nbsp;</p>' +
                 '<p>The University of Cambridge has more than 150 departments and research institutions,usually responsible for the academic and research work of the university.' +
                 'The departments and research institutions are grouped into six main departments.The six main departments of the University of Cambridge are: arts and humanities,' +
                 'biological sciences (including veterinary medicine), clinical medicine, humanities and social sciences, natural sciences, and technology.' +
                 'Biological sciences are the dominant disciplines of Cambridge, and the establishment of extensive academic cooperation is conducive to the development of disciplines</p></ol>'
 
-            var word_2 = '<ol><h2>UK, The University of Cambridge, Geng Zou, Sep 29,2017</h2><p>&nbsp;</p>' +
+            var word_3 = '<ol><h2>UK, The University of Cambridge, Geng Zou, Sep 29,2017</h2><p>&nbsp;</p>' +
                 '<p>Our laboratory encourages students to participate in the exchange program and go to Cambridge University for exchange study.' +
                 'While experiencing the multicultural atmosphere, learn the advanced research ideas from foreign researchers.</p></ol>'
 
-            var word_3 = '<ol><h2>UK, The Eagle Pub, The University of Cambridge, Geng Zou, March 8,2017</h2><p>&nbsp;</p>' +
+            var word_4 = '<ol><h2>UK, The Eagle Pub, The University of Cambridge, Geng Zou, March 8,2017</h2><p>&nbsp;</p>' +
                 '<p>This is where Watson and Crick announced the great discovery of the DNA model. Take pictures where the DNA double helix was discovered and experience the thrill of a great academic discovery.</p></ol>'
 
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
             $("#photo_2").append(line_2);
             $("#photo_3").append(line_3);
+            $("#photo_4").append(line_4);
             $("#word_1").html(word_1);
             $("#word_2").append(word_2);
             $("#word_3").append(word_3);
+            $("#word_4").append(word_4);
+
         };
         if (Params == 'Fiji') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
