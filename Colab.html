@@ -164,7 +164,7 @@
                 'Islam MS, Zhou Y, Liang L, Nime I, Yan T, Willias SP, Mia MZ, Bei W, Connerton IF, Fischetti VA, Li J. Microorganisms. 2020 Feb 13;8(2):247. doi: 10.3390/microorganisms8020247.</li>' +
                 '<li class="secondlist">3.3 <a href="https://pubmed.ncbi.nlm.nih.gov/34137500/" target="_blank">The global emergence of a novel Streptococcus suis clade associated with human infections. </a>' +
                 'Dong X, Chao Y, Zhou Y, Zhou R, Zhang W, Fischetti VA, Wang X, Feng Y, Li J. EMBO Mol Med. 2021 Jul 7;13(7):e13810. doi: 10.15252/emmm.202013810. </li>' +
-                
+
                 '</ul></ol>'
 
             var word_2 = '<ol><h2>USA, The Rockefeller University, Siyue Xu, 2019, Visit The Rockefeller University</h2><p>&nbsp;</p>' +
@@ -215,25 +215,18 @@
             $("#word_1").html(word_1);
             $("#d2").remove();
         };
-
-        if (Params == 'China') {
+        //China
+        if (Params == 'Hubei') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
             var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
-            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">';
 
             var word_1 = '<ol><h2>Wuhan, East lake, Jinquan Li</h2><p>&nbsp;</p>' +
                 '<p>At the end of 2019, the novel coronavirus pneumonia outbreak suddenly broke out. ' +
                 'A large number of researchers focused on the frontier hot issues of virology research, ' +
                 'and conducted in-depth discussions on virus-host interaction, ' +
                 'virus pathogenic mechanism and immunity, virus genetic diversity and evolution, etc.</p></ol>'
+
             var word_2 =
-                '<ol><h2>Chongqing, the International Society of Swine Diseases, Geng Zou, June 10,2018</h2><p>&nbsp;</p>' +
-                '<p>Founded in 1969, the International Conference on Swine Diseases was held in China for the first time in 50 years ' +
-                'and coincided with its 50th anniversary.' +
-                ' At present, China&rsquo;s veterinary-related scientific research capabilities have reached the international leading level, ' +
-                'and the leaders of major veterinary disciplines are among the top in the world ' +
-                'and have been widely recognized by domestic and foreign academic circles.</p></ol>'
-            var word_3 =
                 '<ol><h2>Wuhan, Asian Swine Disease Society, Geng Zou, May 13,2017</h2><p>&nbsp;</p>' +
                 '<p>The 8th academic conference of the Asian Society of Swine Diseases opened in Wuhan.' +
                 'This conference is hosted by Huazhong Agricultural University.</p></ol>'
@@ -241,10 +234,24 @@
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
             $("#photo_2").append(line_2);
-            $("#photo_3").append(line_3);
             $("#word_1").html(word_1);
             $("#word_2").append(word_2);
-            $("#word_3").append(word_3);
+        };
+        if (Params == 'Chongqing') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
+
+
+            var word_1 =
+                '<ol><h2>Chongqing, the International Society of Swine Diseases, Geng Zou, June 10,2018</h2><p>&nbsp;</p>' +
+                '<p>Founded in 1969, the International Conference on Swine Diseases was held in China for the first time in 50 years ' +
+                'and coincided with its 50th anniversary.' +
+                ' At present, China&rsquo;s veterinary-related scientific research capabilities have reached the international leading level, ' +
+                'and the leaders of major veterinary disciplines are among the top in the world ' +
+                'and have been widely recognized by domestic and foreign academic circles.</p></ol>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
         };
         if (Params == 'UK') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_4.jpg" alt="">';
