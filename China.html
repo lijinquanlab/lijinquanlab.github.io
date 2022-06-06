@@ -104,7 +104,7 @@
         }
 
     </style>
-    <div id="box" style="width: 800px; height: 600px;"></div>
+    <div id="box" style="width: 800px; height: 800px;"></div>
     <script>
     // 初始化echarts实例
     var myEcharts = echarts.init(document.getElementById("box"));
@@ -144,7 +144,7 @@
                         }
                     }
                 },
-                zoom: 1.5, //地图缩放比例,默认为1
+                zoom: 1, //地图缩放比例,默认为1
                 emphasis: { //是图形在高亮状态下的样式,比如在鼠标悬浮或者图例联动高亮时
                     areaColor: "#a4edba",
                     label: { show: true }
@@ -152,45 +152,82 @@
             },
             roam: true, //是否开启平游或缩放
             scaleLimit: { //滚轮缩放的极限控制
-                min: 1,
+                min: 1.1,
                 max: 10
             },
             top: "3%", //组件距离容器的距离
+            nameMap: {
+                '北京': 'Beijing',
+                '天津': 'Tianjin',
+                '上海': 'Shanghai',
+                '重庆': 'Chongqing',
+                '河北': 'Hebei',
+                '河南': ' Henan',
+                '云南': 'Yunnan',
+                '辽宁': 'Liaoning',
+                '黑龙江': 'Heilongjiang',
+                '湖南': 'Hunan',
+                '安徽': 'Anhui',
+                '山东': 'Shandong',
+                '新疆': 'Xinjiang',
+                '江苏': 'Jiangsu',
+                '浙江': 'Zhejiang',
+                '江西': 'Jiangxi',
+                '湖北': 'Hubei',
+                '广西': 'Guangxi',
+                '甘肃': 'Gansu',
+                '山西': 'Shanxi',
+                '内蒙古': 'Inner Mongoria',
+                '陕西': 'Shaanxi',
+                '吉林': 'Jilin',
+                '福建': 'Fujian',
+                '贵州': 'Guizhou',
+                '广东': 'Guangdong',
+                '青海': 'Qinghai',
+                '西藏': 'Tibet',
+                '四川': 'Sichuan',
+                '宁夏': 'Ningxia',
+                '海南': 'Hainan',
+                '台湾': 'Taiwan',
+                '香港': 'Hong Kong',
+                '澳门': 'Macao',
+            },
             data: [
-                { name: '北京', value: 0 },
-                { name: '天津', value: 0 },
-                { name: '上海', value: 0 },
-                { name: '重庆', value: 1 },
-                { name: '河北', value: 0 },
-                { name: '河南', value: 0 },
-                { name: '云南', value: 0 },
-                { name: '辽宁', value: 0 },
-                { name: '黑龙江', value: 0 },
-                { name: '湖南', value: 0 },
-                { name: '安徽', value: 0 },
-                { name: '山东', value: 0 },
-                { name: '新疆', value: 0 },
-                { name: '江苏', value: 0 },
-                { name: '浙江', value: 0 },
-                { name: '江西', value: 0 },
-                { name: '湖北', value: 2 },
-                { name: '广西', value: 0 },
-                { name: '甘肃', value: 0 },
-                { name: '山西', value: 0 },
-                { name: '内蒙古', value: 0 },
-                { name: '陕西', value: 0 },
-                { name: '吉林', value: 0 },
-                { name: '福建', value: 0 },
-                { name: '贵州', value: 0 },
-                { name: '广东', value: 0 },
-                { name: '青海', value: 0 },
-                { name: '西藏', value: 0 },
-                { name: '四川', value: 0 },
-                { name: '宁夏', value: 0 },
-                { name: '海南', value: 0 },
-                { name: '台湾', value: 0 },
-                { name: '香港', value: 0 },
-                { name: '澳门', value: 0 }
+                { name: 'Beijing', value: 0 },
+                { name: 'Tianjin', value: 0 },
+                { name: 'Shanghai', value: 0 },
+                { name: 'Chongqing', value: 1 },
+                { name: 'Hebei', value: 0 },
+                { name: ' Henan', value: 0 },
+                { name: 'Yunnan', value: 0 },
+                { name: 'Liaoning', value: 0 },
+                { name: 'Heilongjiang', value: 0 },
+                { name: 'Hunan', value: 0 },
+                { name: 'Anhui', value: 0 },
+                { name: 'Shandong', value: 0 },
+                { name: 'Xinjiang', value: 0 },
+                { name: 'Jiangsu', value: 0 },
+                { name: 'Zhejiang', value: 0 },
+                { name: 'Jiangxi', value: 0 },
+                { name: 'Hubei', value: 2 },
+                { name: 'Guangxi', value: 0 },
+                { name: 'Gansu', value: 0 },
+                { name: 'Shanxi', value: 0 },
+                { name: 'Inner Mongoria', value: 0 },
+                { name: 'Shaanxi', value: 0 },
+                { name: 'Jilin', value: 0 },
+                { name: 'Fujian', value: 0 },
+                { name: 'Guizhou', value: 0 },
+                { name: 'Guangdong', value: 0 },
+                { name: 'Qinghai', value: 0 },
+                { name: 'Tibet', value: 0 },
+                { name: 'Sichuan', value: 0 },
+                { name: 'Ningxia', value: 0 },
+                { name: 'Hainan', value: 0 },
+                { name: 'Taiwan', value: 0 },
+                { name: 'Hong Kong', value: 0 },
+                { name: 'Macao', value: 0 }
+
             ]
         }]
     };
@@ -198,15 +235,15 @@
     myEcharts.setOption(option);
     myEcharts.on("click", function(params) {
         console.log(params);
-        if (params.name == "湖北") {
+        if (params.name == "Hubei") {
             var nations = "Hubei"
-          window.open("./Colab.html" + "?nation=" + nations);
+            window.open("./Colab.html" + "?nation=" + nations);
         };
-        if (params.name == "重庆") {
+        if (params.name == "Chongqing") {
             var nations = "Chongqing"
-          window.open("./Colab.html" + "?nation=" + nations);
+            window.open("./Colab.html" + "?nation=" + nations);
         };
-      });
+    });
     </script>
     <!-- /container -->
     <h5>&nbsp;</h5>
