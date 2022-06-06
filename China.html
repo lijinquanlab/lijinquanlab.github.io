@@ -106,7 +106,6 @@
     </style>
     <div id="box" style="width: 800px; height: 800px;"></div>
     <script>
-    // 初始化echarts实例
     var myEcharts = echarts.init(document.getElementById("box"));
     var option = {
         tooltip: {
@@ -119,10 +118,9 @@
                 fontFamily: 'sans-serif',
                 fontSize: 14,
             },
-            //字符串模板(地图): {a}（系列名称），{b}（区域名称），{c}（合并数值）,{d}（无）
             formatter: 'Cooperation in {b}：{c}'
         },
-        visualMap: { //视觉映射组件\
+        visualMap: { 
             show: false,
             min: 0,
             max: 5,
