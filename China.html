@@ -131,31 +131,30 @@
             }
         },
         series: [{
-            name: '模拟数据',
             type: 'map',
             mapType: 'china',
-            roam: false, //是否开启鼠标缩放和平移漫游
-            itemStyle: { //地图区域的多边形 图形样式
-                normal: { //是图形在默认状态下的样式
+            roam: false, 
+            itemStyle: { 
+                normal: { 
                     label: {
-                        show: true, //是否显示标签
+                        show: true, 
                         textStyle: {
                             color: "black"
                         }
                     }
                 },
-                zoom: 1, //地图缩放比例,默认为1
-                emphasis: { //是图形在高亮状态下的样式,比如在鼠标悬浮或者图例联动高亮时
+                zoom: 1, 
+                emphasis: { 
                     areaColor: "#a4edba",
                     label: { show: true }
                 }
             },
-            roam: true, //是否开启平游或缩放
-            scaleLimit: { //滚轮缩放的极限控制
+            roam: true, 
+            scaleLimit: { 
                 min: 1.1,
                 max: 10
             },
-            top: "3%", //组件距离容器的距离
+            top: "3%", 
             nameMap: {
                 '北京': 'Beijing',
                 '天津': 'Tianjin',
@@ -233,7 +232,6 @@
             ]
         }]
     };
-    // 使用刚指定的配置项和数据显示图表。
     myEcharts.setOption(option);
     myEcharts.on("click", function(params) {
         console.log(params);
