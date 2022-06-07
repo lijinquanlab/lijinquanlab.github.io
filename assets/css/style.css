@@ -244,6 +244,7 @@ ul.list-spaces li {
 /* Helpers */
 .container-full {
     margin: 0 auto;
+    padding-left: 25px;
     width: 100%;
 }
 
