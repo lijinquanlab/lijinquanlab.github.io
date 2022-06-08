@@ -193,7 +193,7 @@
             data: [
                 { name: 'Beijing', value: 0 },
                 { name: 'Tianjin', value: 0 },
-                { name: 'Shanghai', value: 0 },
+                { name: 'Shanghai', value: 2 },
                 { name: 'Chongqing', value: 1 },
                 { name: 'Hebei', value: 0 },
                 { name: ' Henan', value: 0 },
@@ -205,7 +205,7 @@
                 { name: 'Shandong', value: 0 },
                 { name: 'Xinjiang', value: 0 },
                 { name: 'Jiangsu', value: 0 },
-                { name: 'Zhejiang', value: 0 },
+                { name: 'Zhejiang', value: 1 },
                 { name: 'Jiangxi', value: 0 },
                 { name: 'Hubei', value: 2 },
                 { name: 'Guangxi', value: 0 },
@@ -241,6 +241,14 @@
             var nations = "Chongqing";
             window.open("./Colab.html" + "?nation=" + nations);
         };
+        if (params.name == "Zhejiang") {
+            var nations = "Zhejiang";
+            window.open("./Colab.html" + "?nation=" + nations);
+        };
+        if (params.name == "Shanghai") {
+            var nations = "Shanghai";
+            window.open("./Colab.html" + "?nation=" + nations);
+        }; 
     });
     </script>
     <!-- /container -->

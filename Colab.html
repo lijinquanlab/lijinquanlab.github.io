@@ -147,13 +147,94 @@
         let urlParams = url.split('?')[1]
         let Params = url.split('=')[1]
         console.log(Params);
+        //China
+        if (Params == 'Hubei') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
+            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
+
+            var word_1 = '<ol><h2>Wuhan, East lake, Jinquan Li</h2><p>&nbsp;</p>' +
+                '<p>At the end of 2019, the novel coronavirus pneumonia outbreak suddenly broke out. ' +
+                'A large number of researchers focused on the frontier hot issues of virology research, ' +
+                'and conducted in-depth discussions on virus-host interaction, ' +
+                'virus pathogenic mechanism and immunity, virus genetic diversity and evolution, etc.</p></ol>';
+
+            var word_2 =
+                '<ol><h2>Wuhan, Asian Swine Disease Society, Geng Zou, May 13,2017</h2><p>&nbsp;</p>' +
+                '<p>The 8th academic conference of the Asian Society of Swine Diseases opened in Wuhan.' +
+                'This conference is hosted by Huazhong Agricultural University.</p></ol>';
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#photo_2").append(line_2);
+            $("#word_1").html(word_1);
+            $("#word_2").append(word_2);
+        };
+        if (Params == 'Chongqing') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
+
+            var word_1 =
+                '<ol><h2>Chongqing, the International Society of Swine Diseases, Geng Zou, June 10,2018</h2><p>&nbsp;</p>' +
+                '<p>Founded in 1969, the International Conference on Swine Diseases was held in China for the first time in 50 years ' +
+                'and coincided with its 50th anniversary.' +
+                ' At present, China&rsquo;s veterinary-related scientific research capabilities have reached the international leading level, ' +
+                'and the leaders of major veterinary disciplines are among the top in the world ' +
+                'and have been widely recognized by domestic and foreign academic circles.</p></ol>';
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
+        };
+        if (Params == 'Shanghai') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
+            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
+
+            var word_1 = '<ol><h2>Shanghai, Chinese Academy of Sciences, Jinquan Li & Yanjie Chao, Jun 17,2021</h2><p>&nbsp;</p>' +
+                '<li class="firstlist">Dr. Yanjie Chao, researcher of Institut Pasteur of Shanghai, Chinese Academy of Sciences, head of the Research Group of Microbial RNA Systems Biology.</br>' +
+                '<a href="http://sourcedb.shanghaipasteur.cas.cn/zw/kydw/yjzz/202010/t20201009_5714340.html" target="_blank">http://sourcedb.shanghaipasteur.cas.cn/zw/kydw/yjzz/202010/&#10;t20201009_5714340.html</a></li>' +
+                '<li class="firstlist">微生物RNA系统生物学实验室 link: <a href="https://www.labxing.com/chaolab" target="_blank">www.labxing.com/chaolab</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/34137500/" target="_blank">The global emergence of a novel Streptococcus suis clade associated with human infections. </a>' +
+                'Dong X, Chao Y, Zhou Y, Zhou R, Zhang W, Fischetti VA, Wang X, Feng Y, Li J. EMBO Mol Med. 2021 Jul 7;13(7):e13810. doi: 10.15252/emmm.202013810. </li>' +
+                '</ul></ol>';
+            var word_2 = '<ol><h2>Shanghai, Shanghai Laboratory Animal Research Center, Jinquan Li & Liping Feng, May 3,2018</h2><p>&nbsp;</p>' +
+                '<li class="firstlist">Shanghai Laboratory Animal Research Center was established in 1983, and is a public institution directly under the Shanghai Academy of Sciences.</li>' +
+                '<li class="firstlist">Shanghai Laboratory Animal Research Center link:</br><a href="http://www.slarc.org.cn/slarcWebSite/" target="_blank">www.slarc.org.cn/slarcWebSite/</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/34137500/" target="_blank">Immunogenicity and protective capacity of EF-Tu and FtsZ of Streptococcus suis serotype 2 against lethal infection</a>' +
+                'Feng L, Niu X, Mei W, Li W, Liu Y, Willias SP, Yuan C, Bei W, Wang X, Li J. Vaccine. 2018 May 3;36(19):2581-2588. doi: 10.1016/j.vaccine.2018.03.079. </li>' +
+                '</ul></ol>';
+
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#photo_2").append(line_2);
+            $("#word_1").html(word_1);
+            $("#word_2").append(word_2);
+        };
+        if (Params == 'Zhejiang') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
+            var word_1 = '<ol><h2>Hangzhou, Zhejiang University, Jinquan Li & Ye Feng, Jun 17,2021</h2><p>&nbsp;</p>' +
+                '<li class="firstlist">Dr. Feng Ye mainly studies the pathogenicity, drug resistance and epidemic mechanism of clinically important pathogens, etc.</br>' +
+                '<a href="http://itm.zju.edu.cn/cn/lab0.asp?t1=125&t2=234&t3=272&t4=83" target="_blank">itm.zju.edu.cn/cn/lab0.asp?t1=125&t2=234&t3=272&t4=83</a></li>' +
+                '<li class="firstlist">Ye Feng lab: <a href="http://itm.zju.edu.cn/cn/lab.asp?t1=125&t2=234&t3=272" target="_blank">itm.zju.edu.cn/cn/lab.asp?t1=125&t2=234&t3=272</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/34137500/" target="_blank">The global emergence of a novel Streptococcus suis clade associated with human infections. </a>' +
+                'Dong X, Chao Y, Zhou Y, Zhou R, Zhang W, Fischetti VA, Wang X, Feng Y, Li J. EMBO Mol Med. 2021 Jul 7;13(7):e13810. doi: 10.15252/emmm.202013810. </li>' +
+                '</ul></ol>'
+
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
+            $("#d2").remove();
+        };
 
         if (Params == 'USA') {
             var line_1 = '<img style="height:550px;weight:350px" src="assets/images/' + Params + '_1.jpg" alt="">';
             var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.JPG" alt="">';
 
 
-            var word_1 = '<ol><h2>USA, The Rockefeller University, Vincent A. Fischetti & Jinquan Li, 2020-present </h2>' +
+            var word_1 = '<ol><h2>USA, The Rockefeller University, Jinquan Li & Vincent A. Fischetti, 2020-present </h2>' +
 
                 '<li class="firstlist">Vincent A. Fischetti,Ph.D. studies bacterial infectious diseases and the use of phage enzymes and derivatives to treat and prevent infection.</br><a href="https://www.rockefeller.edu/our-scientists/heads-of-laboratories/1160-vincent-a-fischetti/" target="_blank">www.rockefeller.edu/our-scientists/heads-of-laboratories/1160-vincent-a-fischetti/</a></li>' +
                 '<li class="firstlist">Laboratory of Bacterial Pathogenesis and Immunology link: <a href="https://www2.rockefeller.edu/vaf/" target="_blank">www2.rockefeller.edu/vaf</a></li>' +
@@ -183,8 +264,8 @@
 
         if (Params == 'Australia') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
-            var word_1 = '<ol><h2>Australia, The University of Melbourne, Jun 5,2017, Jinquan Li with Prof. Robin Gasser ' +
-                'and <a href="https://faculty.hzau.edu.cn/humin/en/index.htm" target="_blank">Prof. Min Hu</a></h2><p>&nbsp;</p>' +
+            var word_1 = '<ol><h2>Australia, The University of Melbourne, Jinquan Li with Prof. Robin Gasser ' +
+                'and <a href="https://faculty.hzau.edu.cn/humin/en/index.htm" target="_blank">Prof. Min Hu</a>, Jun 5,2017</h2><p>&nbsp;</p>' +
 
                 '<li class="firstlist">Congratulations to Prof. Robin Gasser for being a Fellow of Australian Academy of Science elected in 2021.</br> <a href="https://www.science.org.au/profile/robin-gasser" target="_blank">www.science.org.au/profile/robin-gasser</a></li>' +
                 '<li class="firstlist">Gasser Lab link: <a href="http://gasserlab.org/index.html" target="_blank">gasserlab.org/index.html</a></li>' +
@@ -215,44 +296,7 @@
             $("#word_1").html(word_1);
             $("#d2").remove();
         };
-        //China
-        if (Params == 'Hubei') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
-            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
 
-            var word_1 = '<ol><h2>Wuhan, East lake, Jinquan Li</h2><p>&nbsp;</p>' +
-                '<p>At the end of 2019, the novel coronavirus pneumonia outbreak suddenly broke out. ' +
-                'A large number of researchers focused on the frontier hot issues of virology research, ' +
-                'and conducted in-depth discussions on virus-host interaction, ' +
-                'virus pathogenic mechanism and immunity, virus genetic diversity and evolution, etc.</p></ol>'
-
-            var word_2 =
-                '<ol><h2>Wuhan, Asian Swine Disease Society, Geng Zou, May 13,2017</h2><p>&nbsp;</p>' +
-                '<p>The 8th academic conference of the Asian Society of Swine Diseases opened in Wuhan.' +
-                'This conference is hosted by Huazhong Agricultural University.</p></ol>'
-
-            $("#nation").html(Params);
-            $("#photo_1").html(line_1);
-            $("#photo_2").append(line_2);
-            $("#word_1").html(word_1);
-            $("#word_2").append(word_2);
-        };
-        if (Params == 'Chongqing') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
-
-
-            var word_1 =
-                '<ol><h2>Chongqing, the International Society of Swine Diseases, Geng Zou, June 10,2018</h2><p>&nbsp;</p>' +
-                '<p>Founded in 1969, the International Conference on Swine Diseases was held in China for the first time in 50 years ' +
-                'and coincided with its 50th anniversary.' +
-                ' At present, China&rsquo;s veterinary-related scientific research capabilities have reached the international leading level, ' +
-                'and the leaders of major veterinary disciplines are among the top in the world ' +
-                'and have been widely recognized by domestic and foreign academic circles.</p></ol>'
-
-            $("#nation").html(Params);
-            $("#photo_1").html(line_1);
-            $("#word_1").html(word_1);
-        };
         if (Params == 'UK') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_4.jpg" alt="">';
             var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
