@@ -147,49 +147,36 @@
         let urlParams = url.split('?')[1]
         let Params = url.split('=')[1]
         console.log(Params);
+
         //China
         if (Params == 'Hubei') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
-            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
+            var line_1 = '<img style="height:460px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
 
-            var word_1 = '<ol><h2>Wuhan, East lake, Jinquan Li</h2><p>&nbsp;</p>' +
-                '<p>At the end of 2019, the novel coronavirus pneumonia outbreak suddenly broke out. ' +
-                'A large number of researchers focused on the frontier hot issues of virology research, ' +
-                'and conducted in-depth discussions on virus-host interaction, ' +
-                'virus pathogenic mechanism and immunity, virus genetic diversity and evolution, etc.</p></ol>';
-
-            var word_2 =
-                '<ol><h2>Wuhan, Asian Swine Disease Society, Geng Zou, May 13,2017</h2><p>&nbsp;</p>' +
-                '<p>The 8th academic conference of the Asian Society of Swine Diseases opened in Wuhan.' +
-                'This conference is hosted by Huazhong Agricultural University.</p></ol>';
-
-            $("#nation").html(Params);
-            $("#photo_1").html(line_1);
-            $("#photo_2").append(line_2);
-            $("#word_1").html(word_1);
-            $("#word_2").append(word_2);
-        };
-        if (Params == 'Chongqing') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
-
-            var word_1 =
-                '<ol><h2>Chongqing, the International Society of Swine Diseases, Geng Zou, June 10,2018</h2><p>&nbsp;</p>' +
-                '<p>Founded in 1969, the International Conference on Swine Diseases was held in China for the first time in 50 years ' +
-                'and coincided with its 50th anniversary.' +
-                ' At present, China&rsquo;s veterinary-related scientific research capabilities have reached the international leading level, ' +
-                'and the leaders of major veterinary disciplines are among the top in the world ' +
-                'and have been widely recognized by domestic and foreign academic circles.</p></ol>';
+            var word_1 = '<ol><h2>Wuhan, Hubei Academy of Agricultural Sciences, Jinquan Li & Fangyan Yuan, March 5,2018</h2><p>&nbsp;</p>' +
+                '<li class="firstlist">Shuo Zhang, Associate Professor of Institute of Animal Husbandry and Veterinary Sciences, Hubei Academy of Agricultural Sciences, researches on livestock disease control.</br>' +
+                '<a href="http://www.hbaas.com/id_2c9082a27b96306c017ba00e47ec2cf8/news.shtml" target="_blank">www.hbaas.com/id_2c9082a27b96306c017ba00e47ec2cf8/news.shtml</a></li>' +
+                '<li class="firstlist">Institute of Animal Husbandry and Veterinary Sciences link: <br><a href="http://www.hbaas.com/id_8a8a8a83551435c3015523ac491f02ca/news.shtml" target="_blank">www.hbaas.com/id_8a8a8a83551435c3015523ac491f02ca/news.shtml</a></li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                '<ul><li class="secondlist">3.1 <a href="https://pubmed.ncbi.nlm.nih.gov/29253192/" target="_blank">Binding of Fibronectin to SsPepO Facilitates the Development of Streptococcus suis Meningitis. </a>' +
+                'Liu F, Li J, Yan K, Li H, Sun C, Zhang S, Yuan F, Wang X, Tan C, Chen H, Bei W. J Infect Dis. 2018 Mar 5;217(6):973-982. doi: 10.1093/infdis/jix523.  </li>' +
+                '<li class="secondlist">3.2 <a href="https://pubmed.ncbi.nlm.nih.gov/25820064/" target="_blank">Evaluation of the protective efficacy of four novel identified membrane associated proteins of Streptococcus suis serotype 2. </a>' +
+                'Zhou Y, Wang Y, Deng L, Zheng C, Yuan F, Chen H, Bei W, Li J. Vaccine. 2015 May 5;33(19):2254-2260. doi: 10.1016/j.vaccine.2015.03.038.  </li>'
+                '</ul></ol>';
 
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
             $("#word_1").html(word_1);
+            $("#d2").remove();
+            $("#d3").remove();
+            $("#d4").remove(); 
         };
+        
         if (Params == 'Shanghai') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
             var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
 
             var word_1 = '<ol><h2>Shanghai, Chinese Academy of Sciences, Jinquan Li & Yanjie Chao, Jun 17,2021</h2><p>&nbsp;</p>' +
-                '<li class="firstlist">Dr. Yanjie Chao, researcher of Institut Pasteur of Shanghai, Chinese Academy of Sciences, head of the Research Group of Microbial RNA Systems Biology.</br>' +
+                '<li class="firstlist">Dr. Yanjie Chao, Professor of Institut Pasteur of Shanghai, Chinese Academy of Sciences, head of the Research Group of Microbial RNA Systems Biology.</br>' +
                 '<a href="http://sourcedb.shanghaipasteur.cas.cn/zw/kydw/yjzz/202010/t20201009_5714340.html" target="_blank">http://sourcedb.shanghaipasteur.cas.cn/zw/kydw/yjzz/202010/&#10;t20201009_5714340.html</a></li>' +
                 '<li class="firstlist">微生物RNA系统生物学实验室 link: <a href="https://www.labxing.com/chaolab" target="_blank">www.labxing.com/chaolab</a></li>' +
                 '<li class="firstlist">Cooperation Archievements:' +
@@ -227,11 +214,12 @@
             $("#photo_1").html(line_1);
             $("#word_1").html(word_1);
             $("#d2").remove();
+            $("#d3").remove();
+            $("#d4").remove(); 
         };
 
         if (Params == 'USA') {
             var line_1 = '<img style="height:550px;weight:350px" src="assets/images/' + Params + '_1.jpg" alt="">';
-            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.JPG" alt="">';
 
 
             var word_1 = '<ol><h2>USA, The Rockefeller University, Jinquan Li & Vincent A. Fischetti, 2020-present </h2>' +
@@ -248,17 +236,10 @@
 
                 '</ul></ol>'
 
-            var word_2 = '<ol><h2>USA, The Rockefeller University, Siyue Xu, 2019, Visit The Rockefeller University</h2><p>&nbsp;</p>' +
-                '<p>Students in our group have the opportunity to visit Rockefeller University,' +
-                'conduct academic exchanges with Rockefeller University professors, and explore the mysterious world of phages together.</p></ol>'
-
-
 
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
-            $("#photo_2").append(line_2);
             $("#word_1").html(word_1);
-            $("#word_2").append(word_2);
 
         };
 
@@ -279,6 +260,9 @@
             $("#photo_1").html(line_1);
             $("#word_1").html(word_1);
             $("#d2").remove();
+            $("#d3").remove();
+            $("#d4").remove();
+
         };
 
         if (Params == 'Egypt') {
@@ -295,13 +279,12 @@
             $("#photo_1").html(line_1);
             $("#word_1").html(word_1);
             $("#d2").remove();
+            $("#d3").remove();
+            $("#d4").remove(); 
         };
 
         if (Params == 'UK') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_4.jpg" alt="">';
-            var line_2 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.JPG" alt="">';
-            var line_3 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_2.jpg" alt="">';
-            var line_4 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_3.jpg" alt="">';
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
 
             var word_1 = '<ol><h2>UK, University of Nottingham, Jinquan Li & Ian F Connerton, 2020-present</h2>' +
 
@@ -316,42 +299,15 @@
                 'Yan T, Liang L, Yin P, Zhou Y, Sharoba AM, Lu Q, Dong X, Liu K, Connerton IF, Li J. Microorganisms. 2020 Mar 12;8(3):400.</br>doi: 10.3390/microorganisms8030400.</li>' +
                 '</ul></ol>'
 
-            var word_2 = '<ol><h2>UK, The University of Cambridge, Jinquan Li & Dongsheng Chen, 2015</h2><p>&nbsp;</p>' +
-                '<p>The University of Cambridge has more than 150 departments and research institutions,usually responsible for the academic and research work of the university.' +
-                'The departments and research institutions are grouped into six main departments.The six main departments of the University of Cambridge are: arts and humanities,' +
-                'biological sciences (including veterinary medicine), clinical medicine, humanities and social sciences, natural sciences, and technology.' +
-                'Biological sciences are the dominant disciplines of Cambridge, and the establishment of extensive academic cooperation is conducive to the development of disciplines</p></ol>'
-
-            var word_3 = '<ol><h2>UK, The University of Cambridge, Geng Zou, Sep 29,2017</h2><p>&nbsp;</p>' +
-                '<p>Our laboratory encourages students to participate in the exchange program and go to Cambridge University for exchange study.' +
-                'While experiencing the multicultural atmosphere, learn the advanced research ideas from foreign researchers.</p></ol>'
-
-            var word_4 = '<ol><h2>UK, The Eagle Pub, The University of Cambridge, Geng Zou, March 8,2017</h2><p>&nbsp;</p>' +
-                '<p>This is where Watson and Crick announced the great discovery of the DNA model. Take pictures where the DNA double helix was discovered and experience the thrill of a great academic discovery.</p></ol>'
-
-            $("#nation").html(Params);
-            $("#photo_1").html(line_1);
-            $("#photo_2").append(line_2);
-            $("#photo_3").append(line_3);
-            $("#photo_4").append(line_4);
-            $("#word_1").html(word_1);
-            $("#word_2").append(word_2);
-            $("#word_3").append(word_3);
-            $("#word_4").append(word_4);
-
-        };
-        if (Params == 'Fiji') {
-            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
-            var word_1 = '<ol><h2>Fiji, International Streptococcus and Streptococcus Conference, Geng Zou, October 19,2017</h2><p>&nbsp;</p>' +
-                '<p>An academic conference is a conference with the theme of promoting scientific development, academic exchanges, project research and other academic topics.' +
-                'Academic conferences are generally international, authoritative, highly knowledgeable, and highly interactive. The participants are generally scientists, scholars, teachers and other researchers with high academic qualifications.</p></ol>'
-
-
             $("#nation").html(Params);
             $("#photo_1").html(line_1);
             $("#word_1").html(word_1);
             $("#d2").remove();
+            $("#d3").remove();
+            $("#d4").remove(); 
+
         };
+
     };
     get()
     </script>
