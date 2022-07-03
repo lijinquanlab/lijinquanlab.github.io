@@ -43,7 +43,7 @@
 <body>
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse">
-        <div class="container">
+        <div class="container-full">
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -54,13 +54,30 @@
                     <li><a href="index.html" target="_blank">Home</a></li>
                     <li><a href="Research.html" target="_blank">Research and publication</a></li>
                     <li><a href="Collaboration.html" target="_blank">Collaboration</a></li>
-                    <li><a href="People.html" target="_blank">People</a></li>
-                    <li class="active"><a href="Photo.html" target="_blank">Memories</a></li>
+                    <li  class="active"><a href="People.html" target="_blank">People</a></li>
+                    <li><a href="Photo.html" target="_blank">Memories</a></li>
                     <li><a href="Contact.html" target="_blank">Contact Us</a></li>
-                    <li></li>
+                    <!-- Scroll News -->
+                    <li>
+                        <div class="scrollNav">
+                            <marquee direction="up" height="50" behavior="scroll" width="auto" height="38" scrollamount='1' onMouseOut="this.start()" onMouseOver="this.stop()">
+                                <ul style="list-style: none;">
+                                    <li style="font-size: 12px;">May 14, 2022</br><a id="scrollNews" href='News.html#news_1' target="_blank">
+                                            Our group website is now officially online. Welcome!</br></br></a></li>
+                                    <li style="font-size: 12px;">Jan 11, 2022</br><a id="scrollNews" href='News.html#news_2' target="_blank">
+                                            Promote the high-quality development of College</br></br></a></li>
+                                    <li style="font-size: 12px;">Jun 21, 2021</br><a id="scrollNews" href='News.html#news_3' target="_blank">
+                                        Research results were selected as Nature's research highlights.</br></br></a>
+                                    </li>
+                                    <li style="font-size: 12px;">May 25, 2021</br><a id="scrollNews" href='News.html#news_4' target="_blank">
+                                        Congratulations to Prof. Robin Gasser </br>for being a Fellow of Australian Academy of Science.
+                                    </li>
+                                </ul>
+                            </marquee>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </div>
     <!-- /.navbar -->
