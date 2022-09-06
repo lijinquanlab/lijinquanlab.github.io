@@ -6687,6 +6687,7 @@ button.close {
 
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
+   position: relative;
    display: block;
      width: 1000px;
     height: 666px;
