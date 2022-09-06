@@ -6690,9 +6690,9 @@ button.close {
     justify-content: center;
 }
 #a{  
-    line-height: 800px;
-    width: 1200px;
-    height: 800px;        
+    
+    width: 1000px;
+    height: 666px;        
 }
 
 .carousel-inner>.active,
