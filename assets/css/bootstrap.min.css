@@ -6686,11 +6686,13 @@ button.close {
 
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
-    display: block;
-    max-width: 80%;
-    height: auto;
-    line-height: 1
-        
+    display: flex;
+    justify-content: center;
+}
+#a{  
+    line-height: 800px;
+    width: 1200px;
+    height: 800px;        
 }
 
 .carousel-inner>.active,
