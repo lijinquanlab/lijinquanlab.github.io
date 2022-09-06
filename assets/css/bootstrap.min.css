@@ -6674,7 +6674,8 @@ button.close {
 .carousel-inner {
     position: relative;
     overflow: hidden;
-    width: 100%
+    width: 1000px;
+    height: 666px;
 }
 
 .carousel-inner>.item {
@@ -6686,13 +6687,10 @@ button.close {
 
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
-    display: flex;
-    justify-content: center;
-}
-#a{  
-    
-    width: 1000px;
-    height: 666px;        
+   display: block;
+     width: 1000px;
+    height: 666px;
+         
 }
 
 .carousel-inner>.active,
