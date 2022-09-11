@@ -6668,7 +6668,11 @@ button.close {
 }
 
 .carousel {
-    position: relative
+    position: relative;
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%
 }
 
 .carousel-inner {
