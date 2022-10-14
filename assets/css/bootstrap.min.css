@@ -4804,7 +4804,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .navbar-nav {
         float: left;
         margin-top: 15px;
-        margin-right: 15px;
+        margin-right: 100px;
         margin-left: 15px;
         margin-bottom: 15px
     }
