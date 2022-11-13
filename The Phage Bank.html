@@ -21,6 +21,8 @@
     <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom styles for our template -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -93,7 +95,122 @@
             </div>
         </div>
     </header>
-    <!-- container -->
+    <!-- modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:500px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Content
+                    </h4>
+                </div>
+                <div class="modal-body" style="height:640px;">
+                    <img id='img' src='' height="620" width="750">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <!-- modal_2 -->
+    <div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:880px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Content
+                    </h4>
+                </div>
+                <div class="modal-body" style="height:640px;">
+                    <img id='img_2' src='' height="620" width="850">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+        
+        <script>
+            function get_2(obj){
+                var cc = obj.id;
+                if(cc == 'id15'){
+                    var imgpath = 'assets/images/detect.jpg'
+                }
+                $('#img_2').attr('src',imgpath)
+            }
+            function get(obj){
+                var cc = obj.id;
+                if(cc == 'id1'){
+                    var imgpath = 'assets/images/1.沙门氏菌噬菌体和噬菌体抗菌组合物 专利.jpg'
+                }
+                if(cc == 'id2'){
+                    var imgpath = 'assets/images/2.沙门氏菌噬菌体LPSE28专利.jpg'
+                }
+                if(cc == 'id3'){
+                    var imgpath = 'assets/images/3.沙门LPSE34专利.jpg'
+                }
+                if(cc == 'id4'){
+                    var imgpath = 'assets/images/LPSTLL专利.png'
+                }
+                if(cc == 'id5'){
+                    var imgpath = 'assets/images/5.刘坤 大肠噬菌体 LPEE17 和LPEK22.jpg'
+                }
+                if(cc == 'id6'){
+                    var imgpath = 'assets/images/6.坂崎LPCS28专利.jpeg'
+                }
+                if(cc == 'id7'){
+                    var imgpath = 'assets/images/7.猪链图1.jpg'
+                }
+                if(cc == 'id8'){
+                    var imgpath = 'assets/images/8.Naturehighlight.jpg'
+                }
+                if(cc == 'id9'){
+                    var imgpath = 'assets/images/9.猪链球菌AEM.jpg'
+                }
+                if(cc == 'id10'){
+                    var imgpath = 'assets/images/10.金葡菌JAC文章.jpg'
+                }
+                if(cc == 'id11'){
+                    var imgpath = 'assets/images/11.金黄色葡萄球菌传播链.jpg'
+                }
+                if(cc == 'id12'){
+                    var imgpath = 'assets/images/12.LPCPA6专利.jpg'
+                }
+                if(cc == 'id13'){
+                    var imgpath = 'assets/images/13.金葡菌AS文章.jpg'
+                }
+                if(cc == 'id14'){
+                    var imgpath = 'assets/images/14.筛选噬菌体.jpg'
+                }
+                if(cc == 'id16'){
+                    var imgpath = 'assets/images/15.链球菌耐药基因传播网络.jpg'
+                }
+                if(cc == 'id17'){
+                    var imgpath = 'assets/images/1110cyto2_00.jpg'
+                }
+                if(cc == 'id18'){
+                    var imgpath = 'assets/images/16.张月文章图.jpg'
+                }
+                if(cc == 'id19'){
+                    var imgpath = 'assets/images/17.丙酸痤疮杆菌噬菌体圈图.jpg'
+                }
+                if(cc == 'id20'){
+                    var imgpath = 'assets/images/18.ZPAH34专利.jpg'
+                }
+                if(cc == 'id21'){
+                    var imgpath = 'assets/images/19.嗜水气专利.png'
+                }
+                if(cc == 'id22'){
+                    var imgpath = 'assets/images/20.副溶血弧菌文章图.jpg'
+                }
+                if(cc == 'id23'){
+                    var imgpath = 'assets/images/烟草.jpg'
+                }
+                $('#img').attr('src',imgpath)
+            }
+        </script>	
     <!-- /container -->
     <h4>&nbsp;</h4>
     <!-- 食品安全 -->
@@ -107,7 +224,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/1.沙门氏菌噬菌体和噬菌体抗菌组合物 专利.jpg" alt="">
+                        <a id='id1' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/1.沙门氏菌噬菌体和噬菌体抗菌组合物 专利.jpg" alt="">
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利: 沙门氏菌噬菌体和噬菌体抗菌组合物<br>
@@ -123,7 +242,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/2.沙门氏菌噬菌体LPSE28专利.jpg" alt="se_pat">
+                        <a id='id2' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/2.沙门氏菌噬菌体LPSE28专利.jpg" alt="">
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：一种肠炎沙门氏菌噬菌体LPSE28及其在食品中的应用<br>
@@ -136,7 +257,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/3.沙门LPSE34专利.jpg" alt="se_pat">
+                        <a id='id3' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/3.沙门LPSE34专利.jpg" alt=""> 
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：一种沙门氏菌噬菌体LPSE34及其在食品中的应用<br>
@@ -149,7 +272,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/LPSTLL专利.png" alt="se_pat">
+                        <a id='id4' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/LPSTLL专利.png" alt="">
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：一种宿主范围广的沙门氏菌噬菌体LPSTLL及其应用<br>
@@ -167,7 +292,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/5.刘坤 大肠噬菌体 LPEE17 和LPEK22.jpg" alt="se_pat">
+                        <a id='id5' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/5.刘坤 大肠噬菌体 LPEE17 和LPEK22.jpg" alt="">
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：噬菌体LPEE17和LPEK22主要有效成分的混合制剂及其应用<br>
@@ -183,8 +310,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/6.坂崎LPCS28专利.jpeg" alt="se_pat">
-
+                        <a id='id6' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/6.坂崎LPCS28专利.jpeg" alt="">
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：一种宽宿主范围的阪崎克洛诺菌噬菌体LPCS28及其应用<br>
@@ -206,7 +334,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/7.猪链图1.jpg" alt="se_pat">
+                        <a id='id7' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/7.猪链图1.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 猪链球菌的分子流行病学与群体基因组学<br>
@@ -223,7 +354,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/8.Naturehighlight.jpg" alt="se_pat">
+                        <a id='id8' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/8.Naturehighlight.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             报道: 猪链球菌相关研究入选Nature全球研究热点<br>
@@ -240,7 +374,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/9.猪链球菌AEM.jpg" alt="se_pat">
+                        <a id='id9' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/9.猪链球菌AEM.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 中国和英国健康猪群中猪链球菌群体特征分析<br>
@@ -260,7 +397,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/10.金葡菌JAC文章.jpg" alt="se_pat">
+                        <a id='id10' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/10.金葡菌JAC文章.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 牦牛中金黄色葡萄球菌群体基因组特征<br>
@@ -275,7 +415,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/11.金黄色葡萄球菌传播链.jpg" alt="se_pat">
+                        <a id='id' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/11.金黄色葡萄球菌传播链.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 猪肉生产供应链中金黄色葡萄球菌的分布特征<br>
@@ -291,7 +434,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/12.LPCPA6专利.jpg" alt="se_pat">
+                        <a id='id12' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/12.LPCPA6专利.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：一种产气荚膜梭菌噬菌体LPCPA6及其应用<br>
@@ -314,7 +460,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/13.金葡菌AS文章.jpg" alt="se_pat">
+                        <a id='id13' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/13.金葡菌AS文章.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 中国医院与猪场中耐甲氧⻄林金黄色葡萄球菌群的体遗传关联<br>
@@ -330,7 +479,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/14.筛选噬菌体.jpg" alt="se_pat">
+                        <a id='id14' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/14.筛选噬菌体.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 金黄色葡萄球菌“噬菌体-宿主”配伍机制——高通量测定金黄色葡萄球菌宿主谱<br>
@@ -343,7 +495,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/detect.jpg" alt="se_pat">
+                        <a id='id15' data-toggle="modal" data-target="#myModal_2" onclick='get_2(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/detect.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             ⼯具开发: 噬菌斑智能识别程序<br>
@@ -360,7 +515,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/15.链球菌耐药基因传播网络.jpg" alt="se_pat">
+                        <a id='id16' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/15.链球菌耐药基因传播网络.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 链球菌相关耐药基因传播⽹络<br>
@@ -373,7 +531,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/1110cyto2_00.jpg" alt="se_pat">
+                        <a id='id17' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/1110cyto2_00.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 链球菌群体的毒⼒进化与社群分化<br>
@@ -389,7 +550,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/16.张月文章图.jpg" alt="se_pat">
+                        <a id='id18' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/16.张月文章图.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: ⼤肠杆菌噬菌体的分类与尾丝蛋⽩特征<br>
@@ -405,7 +569,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/17.丙酸痤疮杆菌噬菌体圈图.jpg" alt="se_pat">
+                        <a id='id19' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/17.丙酸痤疮杆菌噬菌体圈图.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 新型丙酸痤疮杆菌噬菌体LPAP2<br>
@@ -427,7 +594,9 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/18.ZPAH34专利.jpg" alt="se_pat">
+                        <a id='id20' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/18.ZPAH34专利.jpg" alt="">
+                        </a>
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：一种耐环境的嗜水气单胞菌噬菌体ZPAH34及其应用<br>
@@ -440,7 +609,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/19.嗜水气专利.png" alt="se_pat">
+                        <a id='id21' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/19.嗜水气专利.png" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             专利：耐环境嗜水气单胞菌噬菌体及其应用<br>
@@ -456,7 +628,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/20.副溶血弧菌文章图.jpg" alt="se_pat">
+                        <a id='id22' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/20.副溶血弧菌文章图.jpg" alt="se_pat">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 不同来源的副溶⾎弧菌基因组特征及噬菌体防控<br>
@@ -481,7 +656,10 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/烟草.jpg" alt="se_pat">
+                        <a id='id23' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/烟草.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
                         <p style='font-size:12px'>
                             研究: 噬菌体防控烟草⻘枯病<br>
