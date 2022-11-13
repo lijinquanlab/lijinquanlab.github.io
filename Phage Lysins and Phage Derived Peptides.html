@@ -21,6 +21,8 @@
     <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom styles for our template -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -95,7 +97,42 @@
             </div>
         </div>
     </header>
-    <!-- container -->
+    <!-- modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:500px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Content
+                    </h4>
+                </div>
+                <div class="modal-body" style="height:640px;">
+                    <img id='img' src='' height="620" width="750">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <script>
+        function get(obj){
+            var cc = obj.id;
+            if(cc == 'id1'){
+                var imgpath = 'assets/images/一种源于沙门氏菌噬菌体基因编码的蛋白在作为革兰氏阴性菌裂解酶中的应用-授权.jpg'
+            }
+            if(cc == 'id2'){
+                var imgpath = 'assets/images/22.成果转化100W_00.jpg'
+            }
+            if(cc == 'id3'){
+                var imgpath = 'assets/images/裂解酶挖掘系统.jpg'
+            }
+            if(cc == 'id4'){
+                var imgpath = 'assets/images/杨甜SEYT1受通_1_.jpg'
+            }
+            $('#img').attr('src',imgpath)
+        }
+    </script>
     <!-- /container -->
     <h4>&nbsp;</h4>
    
@@ -109,9 +146,12 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/一种源于沙门氏菌噬菌体基因编码的蛋白在作为革兰氏阴性菌裂解酶中的应用-授权.jpg" alt="">
+                        <a id='id1' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/一种源于沙门氏菌噬菌体基因编码的蛋白在作为革兰氏阴性菌裂解酶中的应用-授权.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
-                        <p style='font-size:12px'>
+                        <p style='font-size:14px'>
                             专利： 沙门氏菌噬菌体编码的一种蛋白及其作为革兰氏阴性菌裂解酶的应用<br>
                             Patent：A kind of protein encoded by Salmonella phage and its application as a gram-negative bacteria lysin<br>
 
@@ -123,11 +163,12 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/22.成果转化100W_00.jpg" alt="se_pat">
+                        <a id='id2' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/22.成果转化100W_00.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
-                        <p style='font-size:12px'>
-				
-
+                        <p style='font-size:14px'>
                             技术转让：裂解酶技术授权（100万元）<br>
                             Transfer of technology：The technical authorization of a lysin (1 million RMB)<br>
                         </p> 
@@ -139,10 +180,13 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/裂解酶挖掘系统.jpg" alt="se_pat">
+                        <a id='id3' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/裂解酶挖掘系统.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
-                        <p style='font-size:12px'>
-                            ⼯具开发：裂解酶挖掘系统<br>
+                        <p style='font-size:14px'>
+                            工具开发：裂解酶挖掘系统<br>
                             Tool development：The lysin prediction pipeline<br>
 				程序地址/The GitHub address： <br>
                             <a href="https://github.com/hzaurzli/lysin_prediction" target="_blank">https://github.com/hzaurzli/lysin_prediction</a><br></p> 
@@ -159,9 +203,12 @@
                     <div class="team-member pDark">
                         <!-- Image Hover Block -->
                         <!-- Image  -->
-                        <img style='height:200px;weight:100px' src="assets/images/杨甜SEYT1受通_1_.jpg" alt="se_pat">
+                        <a id='id4' data-toggle="modal" data-target="#myModal" onclick='get(this)'>
+                            <img style='height:280px;weight:180px' src="assets/images/杨甜SEYT1受通_1_.jpg" alt="">
+                        </a>
+                        
                         <!-- Details -->
-                        <p style='font-size:12px'>
+                        <p style='font-size:14px'>
 				专利：一种人工合成的噬菌体衍生肽SEYT1及其应用<br>
                             Patent：A kind of artificially synthesized phage derived peptide SEYT1 and its application<br>
                             
