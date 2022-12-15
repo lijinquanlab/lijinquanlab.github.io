@@ -618,7 +618,38 @@
             $("#d3").remove();
             $("#d4").remove(); 
         };
+        
+        if (Params == 'Belgium') {
+            var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
 
+            var word_1 = 
+            '<ol>'+
+                '<h2>Belgium,&nbsp;&nbsp;Ghent University,&nbsp;&nbsp;Yufan Yang & Hao Li,&nbsp;&nbsp;2022</h2><p>&nbsp;</p>' +
+
+                
+                '<li class="firstlist">'+
+                    'Faculty of Bioscience Engineering, Ghent University:'+
+                    '</br><a href="https://www.ugent.be/bw/en" target="_blank">https://www.ugent.be/bw/en</a>'+
+                '</li>' +
+                '<li class="firstlist">Cooperation Archievements:' +
+                    '<ul>'+
+                        '<li class="secondlist">3.1 <a href="https://www.sciencedirect.com/science/article/abs/pii/S0168365922008021?via%3Dihub" target="_blank">Encapsulation and delivery of phage as a novel method for gut flora manipulation in situ: A review</a> ' +
+                            'Yang, Y., Du, H., Zou, G., Song, Z., Zhou, Y., Li, H., Tan, C., Chen, H., Fischetti, V. A., & Li, J. ournal of Controlled Release. 2022 Dec.'+
+                            '</br><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168365922008021?via%3Dihub" target="_blank">doi: 10.1016/j.jconrel.2022.11.048</a>'+
+                        '</li>'
+                    '</ul>' +
+                '</li>'+
+            '</ol>'
+
+            $("#nation").html(Params);
+            $("#photo_1").html(line_1);
+            $("#word_1").html(word_1);
+            $("#d2").remove();
+            $("#d3").remove();
+            $("#d4").remove(); 
+
+        };
+        
         if (Params == 'UK') {
             var line_1 = '<img style="height:400px;weight:200px" src="assets/images/' + Params + '_1.jpg" alt="">';
 
