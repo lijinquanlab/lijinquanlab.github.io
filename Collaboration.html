@@ -1188,14 +1188,18 @@ Highcharts.getJSON(
 				    var nations = 'Egypt';
 					window.open("./Colab.html" + "?nation=" + nations);
 				 };
+		    		if(e.point.name == 'Belgium'){
+				    var nations = 'Belgium'; 
+					window.open("./Colab.html" + "?nation=" + nations);
+				 };
 				 if(e.point.name == 'United Kingdom'){
 				    var nations = 'UK'; 
 					window.open("./Colab.html" + "?nation=" + nations);
 				 };
-         if(e.point.name == 'Fiji'){
-            var nations = 'Fiji';
-          window.open("./Colab.html" + "?nation=" + nations);
-         };
+         			 if(e.point.name == 'Fiji'){
+            			    var nations = 'Fiji';
+          				window.open("./Colab.html" + "?nation=" + nations);
+         			 };
 				 
             } 
         },
