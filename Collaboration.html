@@ -312,6 +312,10 @@
     value: 000
   },
   {
+    name: 'Holland',
+    value: 1
+  },
+  {
     name: 'Czech Republic',
     value: 0000
   },
@@ -353,7 +357,7 @@
   },
   {
     name: 'Thailand',
-    value: 000
+    value: 1
   },
   {
     name: 'Mozambique',
@@ -597,7 +601,7 @@
   },
   {
     name: 'Netherlands',
-    value: 000
+    value: 1
   },
   {
     name: 'Puerto Rico',
@@ -1182,6 +1186,14 @@ Highcharts.getJSON(
                  console.log(e.point.name); 
 				 if(e.point.name == 'United States of America'){
 				    var nations = 'USA'; 
+					 window.open("./Colab.html" + "?nation=" + nations);
+				 };
+         if(e.point.name == 'Netherlands'){
+				    var nations = 'Netherlands'; 
+					 window.open("./Colab.html" + "?nation=" + nations);
+				 };
+         if(e.point.name == 'Thailand'){
+				    var nations = 'Thailand'; 
 					 window.open("./Colab.html" + "?nation=" + nations);
 				 };
 				 if(e.point.name == 'China'){
